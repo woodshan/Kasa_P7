@@ -5,6 +5,15 @@
     justify-content: center;
 }
 
+.collapse-content {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
 .collapse-background{
     background-color: #FF6060;
     font-size: 24px;
@@ -16,7 +25,8 @@
     height: 47px;
     border-radius: 5px;
     width: 90%;
-    margin-bottom: -3px
+    margin-bottom: -3px;
+    cursor: pointer;
 }
 
 .open {
