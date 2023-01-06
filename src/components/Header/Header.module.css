@@ -1,0 +1,41 @@
+.header-container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.link-container {
+    gap: 50px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 24px;
+    color: #FF6060;
+    font-weight: 500;
+}
+
+.link-effect:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+    .link {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    .header-container {
+        gap: 30px;
+    }
+
+    .link-container {
+        gap: 30px;
+    }
+
+    .logo {
+        width: 33%;
+    }
+}
