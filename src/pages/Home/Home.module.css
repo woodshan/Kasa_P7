@@ -1,17 +1,5 @@
-.banner-container {
-    display:flex;
-}
-
-.background-img {
-    border-radius: 25px;
-    position: relative;
-    width: 100%;
-}
-
 .banner-title {
     font-size: 48px;
+    font-weight: 500;
     color: white;
-    position: absolute;
-    left: 20%;
-    top: 14%;
 }
