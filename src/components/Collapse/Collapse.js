@@ -3,7 +3,7 @@ import open from "../../assets/icons/open.svg";
 import close from "../../assets/icons/close.svg";
 import style from "./Collapse.module.css";
 
-const Collapse = ({children}) => {
+const Collapse = ({children, title}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -18,7 +18,7 @@ const Collapse = ({children}) => {
     <div className={style["collapse-container"]}>
       <div className={style["collapse-content"]}>
         <div className={style["collapse-background"]} onClick={() => handleClick()}>
-          {children}
+          <h3 className={style.title}>{title}</h3>
           {isOpen ? (
             <img
               src={close}

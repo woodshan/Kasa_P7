@@ -17,6 +17,13 @@
     font-weight: 500;
 }
 
+.link-effect {
+    text-decoration: underline;
+    color:#FF6060;
+    font-weight: 500;
+    font-size: 24px;
+}
+
 @media screen and (max-width: 700px) {
     .link {
         font-size: 1rem;
