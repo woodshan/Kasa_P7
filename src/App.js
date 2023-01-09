@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Home from "./pages/Home/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/About/About";
@@ -37,7 +37,7 @@ const App = () => {
               path="*"
               element={<Error />}
             />
-            <Route path="/accommodation/:id" element={<Accommodation />}>
+            <Route path="/accommodation/:id" element={<Accommodation setCurrentPage={setCurrentPage} />}>
             </Route>
           </Routes>
         </div>

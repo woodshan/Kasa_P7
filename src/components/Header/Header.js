@@ -3,10 +3,11 @@ import logo from "../../assets/images/logo.png";
 import style from "./Header.module.css";
 
 const Header = ({ currentPage }) => {
-
   return (
     <div className={style["header-container"]}>
-      <img src={logo} alt="Kasa Logo" className={style.logo} />
+      <NavLink to="/">
+        <img src={logo} alt="Kasa Logo" className={style.logo} />
+      </NavLink>
       <div className={style["link-container"]}>
         <NavLink
           to="/"

@@ -12,12 +12,8 @@
 }
 
 .picture {
-    display:none;
-}
-
-.picture-active {
-    display:block;
     object-fit: cover;
+    object-position: center;
     height: 415px;
     width: 100%;
     border-radius: 25px;
@@ -28,20 +24,27 @@
     position:absolute;
     justify-content: space-between;
     width: 100%;
-    top: 50%;
+    top: 40%;
+    text-align: center;
 }
 
 .arrow {
     cursor: pointer;
+    padding: 0 20px;
 }
 
-/* .bullet-container {
+.bullet-container {
     position: absolute;
     display: flex;
     justify-content: space-around;
-    background-color: blue;
+    position: absolute;
+    top: 90%;
+    width: 100%;
 }
 
-.bullet {
-    width: 4%;
-} */
+.number {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
