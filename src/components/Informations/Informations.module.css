@@ -1,0 +1,68 @@
+.container {
+    display:flex;
+    justify-content: space-between;
+}
+
+.title {
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 25px 0 0 0;
+}
+
+.location {
+    font-size: 18px;
+    color: #FF6060;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+.profile {
+    border-radius: 40px;
+    object-fit: cover;
+    object-position: center;
+    height: 64px;
+}
+
+.host-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+    padding-right: 10px;
+}
+
+.profile-container {
+    display:flex;
+    align-items: center;
+}
+
+.notes {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.tags-container {
+    display:flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    background-color: #FF6060;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 115px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-container {
+    display:flex;
+    gap: 5px;
+    height: 30px;
+}

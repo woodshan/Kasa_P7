@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import accommodationsList from "../../datas/accommodationsList.json";
 import Collapse from "../../components/Collapse/Collapse";
 import Slideshow from "../../components/Slideshow/Slideshow";
+import Informations from "../../components/Informations/Informations";
+import style from "./Accommodation.module.css"
 
 const Accommodation = ({ setCurrentPage }) => {
   useEffect(() => {
@@ -16,11 +18,13 @@ const Accommodation = ({ setCurrentPage }) => {
   );
 
   return (
-    <div>
+    <div className={style.container}>
       <Slideshow data={result} />
-      <h1>{result.title}</h1>
-      <Collapse title="Description">{result.description}</Collapse>
-      <Collapse title="Équipements">{result.equipments}</Collapse>
+      <Informations data={result} />
+      <div className={style["collapse-container"]}>
+        <Collapse title="Description">{result.description}</Collapse>
+        <Collapse title="Équipements">{result.equipments}</Collapse>
+      </div>
     </div>
   );
 };

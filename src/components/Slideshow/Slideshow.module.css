@@ -17,6 +17,7 @@
     height: 415px;
     width: 100%;
     border-radius: 25px;
+    animation: fade 0.8s;
 }
 
 .arrow-container {
@@ -48,3 +49,11 @@
     font-weight: 500;
 }
 
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
