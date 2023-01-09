@@ -1,9 +1,25 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
+import accommodationsList from "../../datas/accommodationsList.json"
+import Collapse from "../../components/Collapse/Collapse"
+import Slideshow from '../../components/Slideshow/Slideshow';
 
 const Accommodation = () => {
+
+    const {id} = useParams();
+
+    const result = accommodationsList.find(accommodation => accommodation.id === id);
+
     return (
         <div>
-            <h1>Accommodation Page</h1>
+            <Slideshow data={result} />
+            <h1>{result.title}</h1>
+            <Collapse title="Description">
+                {result.description}
+            </Collapse>
+            <Collapse title="Équipements">
+                {result.equipments}
+            </Collapse>
         </div>
     );
 };

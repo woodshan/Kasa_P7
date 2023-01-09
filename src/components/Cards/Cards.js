@@ -7,7 +7,7 @@ const Cards = () => {
   return (
     <div className={style["cards-container"]}>
       {dataAccommodations.map(({ id, title, cover }) => (
-        <NavLink to="/accommodation" key={id} className={style.link}>
+        <NavLink to={`/accommodation/${id}`} key={id} className={style.link}>
           <div className={style.card} key={id}>
             <img src={cover} alt="Appartement" className={style["img-card"]} />
             <h3 className={style["title-card"]}>{title}</h3>

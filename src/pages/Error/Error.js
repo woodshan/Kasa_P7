@@ -1,11 +1,7 @@
-import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import style from "./Error.module.css";
 
-const Error = ({ setPage }) => {
-  useEffect(() => {
-    setPage("");
-  }, []);
+const Error = () => {
 
   return (
     <div className={style["error-container"]}>

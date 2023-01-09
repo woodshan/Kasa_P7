@@ -1,0 +1,47 @@
+.slide-container {
+    margin-top: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.items-container {
+    width: 100%;
+    position: relative;
+}
+
+.picture {
+    display:none;
+}
+
+.picture-active {
+    display:block;
+    object-fit: cover;
+    height: 415px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.arrow-container {
+    display:flex;
+    position:absolute;
+    justify-content: space-between;
+    width: 100%;
+    top: 50%;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+/* .bullet-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+}
+
+.bullet {
+    width: 4%;
+} */

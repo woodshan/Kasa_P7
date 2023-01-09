@@ -2,20 +2,21 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import style from "./Header.module.css";
 
-const Header = ({ page }) => {
+const Header = ({ currentPage }) => {
+
   return (
     <div className={style["header-container"]}>
       <img src={logo} alt="Kasa Logo" className={style.logo} />
       <div className={style["link-container"]}>
         <NavLink
           to="/"
-          className={style[page === "home" ? "link-effect" : "link"]}
+          className={style[currentPage === "/" ? "link-effect" : "link"]}
         >
           Accueil
         </NavLink>
         <NavLink
           to="/about"
-          className={style[page === "about" ? "link-effect" : "link"]}
+          className={style[currentPage === "/about" ? "link-effect" : "link"]}
         >
           A Propos
         </NavLink>

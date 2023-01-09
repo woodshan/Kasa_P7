@@ -3,11 +3,10 @@ import Banner from "../../components/Banner/Banner";
 import background from "../../assets/images/about-background.png";
 import Collapse from "../../components/Collapse/Collapse";
 
-const About = ({ setPage, page }) => {
+const About = ({ setCurrentPage }) => {
+
   useEffect(() => {
-    if (page !== "about") {
-      setPage("about");
-    }
+    setCurrentPage(window.location.pathname);
   }, []);
 
   return (

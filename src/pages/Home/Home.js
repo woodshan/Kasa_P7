@@ -4,11 +4,10 @@ import Cards from "../../components/Cards/Cards";
 import style from "./Home.module.css";
 import background from "../../assets/images/home-background.png";
 
-const Home = ({ setPage, page }) => {
+const Home = ({ setCurrentPage }) => {
+
   useEffect(() => {
-    if (page !== "home") {
-      setPage("home");
-    }
+    setCurrentPage(window.location.pathname);
   }, []);
 
   return (
