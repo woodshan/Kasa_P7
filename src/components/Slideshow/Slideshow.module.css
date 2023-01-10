@@ -11,13 +11,23 @@
     position: relative;
 }
 
-.picture {
+.picture-visible {
     object-fit: cover;
     object-position: center;
     height: 415px;
     width: 100%;
     border-radius: 25px;
-    animation: fade 0.8s;
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}
+
+.picture {
+    opacity: 0.6;
+    object-fit: cover;
+    object-position: center;
+    height: 415px;
+    width: 100%;
+    border-radius: 25px;
 }
 
 .arrow-container {
@@ -47,13 +57,4 @@
     color: white;
     font-size: 18px;
     font-weight: 500;
-}
-
-@keyframes fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./Slideshow.module.css";
 import next from "../../assets/icons/next.svg";
 import previous from "../../assets/icons/previous.svg";
@@ -27,8 +27,8 @@ const Slideshow = ({ data }) => {
       <div className={style["items-container"]}>
         <img
           src={data.pictures[currentImage]}
-          alt="Logement"
-          className={style.picture}
+          alt={`Photos ${data.title}`}
+          className={style["picture-visible"]}
         />
         {data.pictures.length > 1 ? (
           <div className={style["arrow-container"]}>

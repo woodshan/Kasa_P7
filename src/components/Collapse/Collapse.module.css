@@ -1,7 +1,7 @@
 .collapse-container {
     display:flex;
     flex-direction: column;
-    /* align-items: center;
+    /* align-items: center; 
     justify-content: center; */
     width: 100%;
 }
@@ -10,7 +10,7 @@
     width: 100%;
     display:flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     margin-bottom: 30px;
 }
@@ -32,6 +32,14 @@
 
 .arrow {
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: rotateZ(-180deg);
+}
+
+.arrow-close {
+    cursor: pointer;
+    transform: rotateZ(180deg);
+    transition: transform .3s ease-in-out;
 }
 
 .description-container {
@@ -46,7 +54,7 @@
 }
 
 @keyframes slide-down {
-    0% { opacity: 0; transform: translateY(-60%); }   
+    0% { opacity: 0; transform: translateY(-40%); }   
   100% { opacity: 1; transform: translateY(0); }
 }
 

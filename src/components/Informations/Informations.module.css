@@ -31,6 +31,11 @@
     padding-right: 10px;
 }
 
+.name-container {
+    line-height: 0.5;
+    text-align: right;
+}
+
 .profile-container {
     display:flex;
     align-items: center;

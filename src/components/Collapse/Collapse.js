@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import open from "../../assets/icons/open.svg";
-import close from "../../assets/icons/close.svg";
 import style from "./Collapse.module.css";
 
 const Collapse = ({ children, title }) => {
@@ -23,7 +22,7 @@ const Collapse = ({ children, title }) => {
         >
           <h3 className={style.title}>{title}</h3>
           {isOpen ? (
-            <img src={close} alt="Fermer" className={style.arrow} />
+            <img src={open} alt="Fermer" className={style["arrow-close"]} />
           ) : (
             <img src={open} alt="Ouvrir" className={style.arrow} />
           )}

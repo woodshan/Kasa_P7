@@ -4,7 +4,7 @@ import accommodationsList from "../../datas/accommodationsList.json";
 import Collapse from "../../components/Collapse/Collapse";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Informations from "../../components/Informations/Informations";
-import style from "./Accommodation.module.css"
+import style from "./Accommodation.module.css";
 
 const Accommodation = ({ setCurrentPage }) => {
   useEffect(() => {
@@ -22,8 +22,16 @@ const Accommodation = ({ setCurrentPage }) => {
       <Slideshow data={result} />
       <Informations data={result} />
       <div className={style["collapse-container"]}>
-        <Collapse title="Description">{result.description}</Collapse>
-        <Collapse title="Équipements">{result.equipments}</Collapse>
+        <Collapse title="Description">
+          <p>{result.description}</p>
+        </Collapse>
+        <Collapse title="Équipements">
+          {result.equipments.map((equipment, index) => (
+            <p className={style.block} key={index}>
+              {equipment}
+            </p>
+          ))}
+        </Collapse>
       </div>
     </div>
   );
