@@ -5,7 +5,7 @@ import style from "./Header.module.css";
 const Header = ({ currentPage }) => {
   return (
     <div className={style["header-container"]}>
-      <NavLink to="/">
+      <NavLink to="/" className={style["logo-link"]}>
         <img src={logo} alt="Kasa Logo" className={style.logo} />
       </NavLink>
       <div className={style["link-container"]}>

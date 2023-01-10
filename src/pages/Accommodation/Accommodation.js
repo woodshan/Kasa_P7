@@ -24,27 +24,26 @@ const Accommodation = ({ setCurrentPage }) => {
     } else if (result !== undefined) {
       setDataLoading(false);
     }
-  }, []);
+  }, [navigate, result, setCurrentPage]);
 
   return (
-    
     <div className={style.container}>
       {!dataLoading ? (
         <div>
           <Slideshow data={result} />
           <Informations data={result} />
-          <div className={style["collapse-container"]}>
-            <Collapse title="Description">
-              <p>{result.description}</p>
-            </Collapse>
-            <Collapse title="Équipements">
-              {result.equipments.map((equipment, index) => (
-                <p className={style.block} key={index}>
-                  {equipment}
-                </p>
-              ))}
-            </Collapse>
-          </div>
+            <div className={style["collapse-container"]}>
+              <Collapse title="Description">
+                <p className={style.description}>{result.description}</p>
+              </Collapse>
+              <Collapse title="Équipements">
+                {result.equipments.map((equipment, index) => (
+                  <p className={style.equipments} key={index}>
+                    {equipment}
+                  </p>
+                ))}
+              </Collapse>
+             </div> 
         </div>
       ) : null}
     </div>

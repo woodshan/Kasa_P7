@@ -29,5 +29,18 @@
     align-items: center;
     border-radius: 25px;
     height: 223px;
-   position:absolute;
+    position:absolute;
+}
+
+@media screen and (max-width: 850px) {
+    .cover {
+        height: 130px;
+    }
+    .banner-container {
+        height: auto;
+        margin-top: 30px;
+    }
+    .title-container {
+        height: 130px;
+    }
 }

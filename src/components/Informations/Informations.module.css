@@ -1,5 +1,6 @@
-.container {
+.test {
     display:flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -24,6 +25,10 @@
     height: 64px;
 }
 
+.info-container {
+    display:flex;
+}
+
 .host-name {
     font-size: 18px;
     font-weight: 500;
@@ -38,7 +43,9 @@
 
 .profile-container {
     display:flex;
-    align-items: center;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    margin-top: 15px;
 }
 
 .notes {
@@ -70,4 +77,39 @@
     display:flex;
     gap: 5px;
     height: 30px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 850px) {
+    .test {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .profile-container {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .name-container {
+        display:flex;
+    }
+    .star-container {
+        margin: 0;
+        height: 25px;
+    }
+    .host-name {
+        margin:0;
+        font-size: 15px;
+    }
+    .name-container {
+        display:flex;
+        flex-direction: column;
+        line-height: 1.3;
+    }
+    .info-container {
+        align-items: center;
+    }
 }

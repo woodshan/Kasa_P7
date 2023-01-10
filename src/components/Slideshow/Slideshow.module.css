@@ -49,3 +49,15 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+@media screen and (max-width:850px) {
+    .picture {
+        height: 255px;
+    }
+    .arrow {
+        width: 30px;
+    }
+    .number {
+        font-size: 15px;
+    }
+}

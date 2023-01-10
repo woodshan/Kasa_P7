@@ -1,0 +1,13 @@
+.container {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.collapse-container {
+    width: 90%;
+}
+
+.description {
+    padding: 0 25px;
+}

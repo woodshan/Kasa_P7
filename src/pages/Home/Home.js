@@ -7,7 +7,7 @@ import background from "../../assets/images/home-background.png";
 const Home = ({ setCurrentPage }) => {
   useEffect(() => {
     setCurrentPage(window.location.pathname);
-  }, []);
+  }, [setCurrentPage]);
 
   return (
     <div>
