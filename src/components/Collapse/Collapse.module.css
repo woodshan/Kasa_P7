@@ -53,6 +53,18 @@
     animation: slide-down .5s ease-out;
 }
 
+.description-fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out 0.5s;
+    background-color:#F7F7F7;
+    border-radius: 0 0 5px 5px ;
+    color:#FF6060;
+    font-size: 24px;
+    padding: 0 25px;
+    width: 90%;
+    z-index: -1;
+}
+
 @keyframes slide-down {
     0% { opacity: 0; transform: translateY(-40%); }   
   100% { opacity: 1; transform: translateY(0); }

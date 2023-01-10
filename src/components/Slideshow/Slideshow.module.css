@@ -11,7 +11,7 @@
     position: relative;
 }
 
-.picture-visible {
+.picture {
     object-fit: cover;
     object-position: center;
     height: 415px;
@@ -19,15 +19,6 @@
     border-radius: 25px;
     opacity: 1;
     transition: opacity 300ms ease-in-out;
-}
-
-.picture {
-    opacity: 0.6;
-    object-fit: cover;
-    object-position: center;
-    height: 415px;
-    width: 100%;
-    border-radius: 25px;
 }
 
 .arrow-container {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Home from "./pages/Home/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
 import About from "./pages/About/About";
 import Error from "./pages/Error/Error";
 import Accommodation from "./pages/Accommodation/Accommodation";
@@ -19,26 +19,17 @@ const App = () => {
           <Routes className={style.container}>
             <Route
               path="/"
-              element={
-                <Home
-                  setCurrentPage={setCurrentPage}
-                />
-              }
+              element={<Home setCurrentPage={setCurrentPage} />}
             />
             <Route
               path="/about"
-              element={
-                <About
-                  setCurrentPage={setCurrentPage}
-                />
-              }
+              element={<About setCurrentPage={setCurrentPage} />}
             />
+            <Route path="*" element={<Error />} />
             <Route
-              path="*"
-              element={<Error />}
+              path="/accommodation/:id"
+              element={<Accommodation setCurrentPage={setCurrentPage} />}
             />
-            <Route path="/accommodation/:id" element={<Accommodation setCurrentPage={setCurrentPage} />}>
-            </Route>
           </Routes>
         </div>
         <Footer />
