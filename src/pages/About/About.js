@@ -10,7 +10,7 @@ const About = ({ setCurrentPage }) => {
   }, [setCurrentPage]);
 
   return (
-    <div>
+    <div className={style["page-container"]}>
       <Banner background={background} />
       <div className={style.container}>
         <div className={style["collapse-container"]}>
