@@ -114,4 +114,7 @@
     .info-container {
         align-items: center;
     }
+    .tag {
+        min-width: 84px;
+    }
 }
