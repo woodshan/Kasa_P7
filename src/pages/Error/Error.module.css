@@ -24,3 +24,21 @@
     font-size: 18px;
     text-decoration: underline;
 }
+ 
+@media screen and (max-width: 850px) {
+    .error-container {
+        justify-content: center;
+    }
+
+    .error {
+        font-size: 96px;
+    }
+
+    .error-description {
+        font-size: 20px;
+    }
+
+    .link {
+        font-size: 15px;
+    }
+}
