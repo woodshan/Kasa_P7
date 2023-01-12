@@ -67,7 +67,8 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        margin-top: 0;
     }
     .star-container {
         margin: 0;

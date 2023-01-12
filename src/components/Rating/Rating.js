@@ -1,6 +1,7 @@
 import React from 'react';
 import pinkStar from "../../assets/icons/pinkStar.svg";
 import greyStar from "../../assets/icons/greyStar.svg";
+import style from "./Rating.module.css";
 
 const Rating = ({ rates, index }) => {
 
@@ -10,7 +11,7 @@ const Rating = ({ rates, index }) => {
     // Show stars based on rating
     const handleStars = () => {
         for (let i = 0; i < rating; i++) {
-          listStars.push(<img src={pinkStar} alt="Étoile" key={i} />);
+          listStars.push(<img src={pinkStar} alt="Étoile" key={i} className={style.star} />);
         }
         if (rating < 5) {
           for (let i = 0; i < 5 - rating; i++) {
