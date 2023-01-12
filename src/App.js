@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-import Home from "./pages/Home/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./pages/About/About";
-import Error from "./pages/Error/Error";
-import Accommodation from "./pages/Accommodation/Accommodation";
 import style from "./styles/App.module.css";
 import Footer from "./components/Footer/Footer";
+import Router from "./components/Router/Router";
 import Header from "./components/Header/Header";
 
 const App = () => {
@@ -13,27 +9,12 @@ const App = () => {
 
   return (
     <div>
-      <BrowserRouter>
-        <div className={style.container}>
+      <div className={style.container}>
+        <Router setCurrentPage={setCurrentPage}>
           <Header currentPage={currentPage} />
-          <Routes className={style.container}>
-            <Route
-              path="/"
-              element={<Home setCurrentPage={setCurrentPage} />}
-            />
-            <Route
-              path="/about"
-              element={<About setCurrentPage={setCurrentPage} />}
-            />
-            <Route path="*" element={<Error />} />
-            <Route
-              path="/accommodation/:id"
-              element={<Accommodation setCurrentPage={setCurrentPage} />}
-            />
-          </Routes>
-        </div>
-        <Footer />
-      </BrowserRouter>
+        </Router>
+      </div>
+      <Footer />
     </div>
   );
 };
