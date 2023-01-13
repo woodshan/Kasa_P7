@@ -8,7 +8,6 @@
 .img-container {
     display:flex;
     justify-content: center;
-    border-radius: 25px;
     width: 100%;
 }
 
@@ -35,11 +34,14 @@
 @media screen and (max-width: 850px) {
     .cover {
         height: 130px;
+        border-radius: 10px;
     }
+
     .banner-container {
         height: auto;
         margin-top: 30px;
     }
+
     .title-container {
         height: 130px;
     }
